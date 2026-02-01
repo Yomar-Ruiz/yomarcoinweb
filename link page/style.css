@@ -1,0 +1,75 @@
+:root{
+    --muy-negro: #000;
+    --negrito: #222;
+    --negre: #222;
+    --buttons: #666;
+}
+
+body{
+    margin: 0;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--muy-negro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .principal{
+    background-color: var(--negrito);
+    width: 32vw;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 40px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.info__personal .info__info{
+    color: green
+}
+
+.foto__foto img{
+    width: 20vw;
+    height: 35vh;
+    object-fit: cover;
+    border-radius: 100px;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.button__{
+    background-color: var(--buttons);
+    font-weight: bold;
+    border: none;
+    border-radius: 9px;
+    width: 25vw;
+    padding: 15px;
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+
+
+@media (max-width: 400px){
+    main .principal{
+        width: 50vw;
+        height: 95vh;
+        overflow: scroll;
+    }
+
+    .button__{
+        padding: 5px;
+        height: 5vh;
+        
+    }
+}
